@@ -20,12 +20,11 @@ while True:
 
     # Ajouter la consommation et la distance au total
     total_essence += essence_utilisee
+    distance_totale += distance
 
-distance_totale += distance
-
-# Afficher la consommation pour ce trajet
-print(f"Essence consommée pour ce trajet : {essence_utilisee:.2f} litres")
+    # Afficher la consommation pour ce trajet
+    print(f"Essence consommée pour ce trajet : {essence_utilisee:.2f} litres")
 
 # Afficher la consommation totale et la distance totale à la fin
-print(f"Distance totale parcourue : {distance_totale} km")
+print(f"\nDistance totale parcourue : {distance_totale} km")
 print(f"Essence totale consommée : {total_essence:.2f} litres")
