@@ -1,6 +1,4 @@
 
-distance_totale = 0
-total_essence = 0
 consommation_moyenne = 0
 
 def readFiles():
@@ -23,14 +21,19 @@ def readFiles():
     return donnés
 
 def calculCouts(n):
-    global donnés, consommation_moyenne, total_essence, distance_totale
+    global donnés, consommation_moyenne
+
+    distance_totale = 0
+    total_essence = 0
 
     if n == 1:
         consommation_moyenne = float(donnés['conso1.txt'][1])
+        nom_véhicule = str(donnés['conso1.txt'][0])
     elif n == 2:
         consommation_moyenne = float(donnés['conso2.txt'][1])
+        nom_véhicule = str(donnés['conso2.txt'][0])
 
-    print(consommation_moyenne)
+    print(f"\nLe véhicule {n} est une {nom_véhicule} qui consomme {consommation_moyenne} L/100km.")
     while True:
 
         # Demander la distance parcourue pour un trajet
@@ -82,6 +85,7 @@ def enregistrerConso():
 
         else:
             print("Veuillez répondre correctement.")
+
 
 
 
