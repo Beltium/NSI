@@ -1,4 +1,9 @@
+i = 0
+
 def explorer_labyrinthe(labyrinthe, x, y, visitees):
+    global i
+    i += 1
+
     # Vérifier les limites du labyrinthe
     if x < 0 or x >= len(labyrinthe) or y < 0 or y >= len(labyrinthe[0]):
         return False
@@ -35,6 +40,18 @@ labyrinthe = [
     [0  , 0  , 0  , 1  , 0]
 ]
 
+labyrinthe2 = [
+    ['S', 1  , 0  , 1  , 1  , 0  , 0  , 0],
+    [0  , 1  , 0  , 1  , 0  , 1  , 1  , 0],
+    [0  , 0  , 0  , 1  , 0  , 0  , 1  , 'E'],
+    [1  , 1  , 0  , 1  , 1  , 0  , 1  , 0],
+    [0  , 1  , 0  , 0  , 0  , 0  , 0  , 0],
+    [0  , 0  , 1  , 1  , 0  , 1  , 1  , 1],
+    [1  , 0  , 0  , 0  , 0  , 0  , 0  , 0],
+    [1  , 1  , 1  , 1  , 1  , 0  , 1  , 1]
+]
+
+
 # Position de départ (0, 0)
 position_depart = (0, 0)
 
@@ -43,3 +60,13 @@ cases_visitees = set()
 
 # Lancer la recherche de la sortie
 explorer_labyrinthe(labyrinthe, position_depart[0], position_depart[1], cases_visitees)
+print(f"Nombre d'itérations : {i}\n")
+
+
+
+position_depart = (0, 0)
+cases_visitees = set()
+i = 0
+
+explorer_labyrinthe(labyrinthe2, position_depart[0], position_depart[1], cases_visitees)
+print(f"Nombre d'itérations : {i}")
