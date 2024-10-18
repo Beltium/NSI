@@ -4,7 +4,13 @@ This repository contains various Python programs created for my "Numérique et S
 
 ## Structure
 
+### Première
+
 - **Trimestre 1**: Programs from the first trimester, covering foundational concepts.
+
+### Terminale
+
+- **Advanced Exercises**: Additional projects and exercises completed during free time or when ahead of the syllabus.
 
 More trimesters and content will be added as the course progresses.
 
@@ -22,7 +28,13 @@ Ce dépôt contient divers programmes Python créés dans le cadre de mes cours 
 
 ## Structure
 
+### Première
+
 - **Trimestre 1** : Programmes du premier trimestre, couvrant les concepts fondamentaux.
+
+### Terminale
+
+- **Exercices Avancés** : Projets et exercices supplémentaires réalisés pendant le temps libre ou lorsque j'étais en avance sur le programme.
 
 D'autres trimestres et contenus seront ajoutés au fur et à mesure de la progression du cours.
 
