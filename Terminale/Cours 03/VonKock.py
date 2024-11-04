@@ -18,11 +18,9 @@ def flocon_von_koch(longueur, niveau):
         von_koch(longueur, niveau)
         turtle.right(120)
 
-turtle.speed("fastest")
 turtle.penup()
 turtle.goto(-200, 100)
 turtle.pendown()
 
 flocon_von_koch(400, 4)
-
 turtle.done()
