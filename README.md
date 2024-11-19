@@ -16,6 +16,9 @@ This repository contains various Python programs created for my "Numérique et S
 
 - **Tkinter**:  set of projects showcasing graphical interfaces built with the Tkinter library. These exercises explore the basics of GUI creation in Python, including windows, buttons, and event handling.
 
+- **Matplotlib**:  Set of projects showcasing data visualization using the Matplotlib library. These exercises delve into creating plots, customizing graphs, and working with visual representations of data in Python.
+
+
 More trimesters and content will be added as the course progresses.
 
 Feel free to explore and use the code!
@@ -43,6 +46,8 @@ Ce dépôt contient divers programmes Python créés dans le cadre de mes cours 
 ### Exercices Supplémentaires
 
 - **Tkinter** : Un ensemble de projets illustrant des interfaces graphiques créées avec la bibliothèque Tkinter. Ces exercices explorent les bases de la création d'IHM en Python, notamment les fenêtres, les boutons et la gestion des événements.
+
+- **Matplotlib** : Ensemble de projets mettant en avant la visualisation de données avec la bibliothèque Matplotlib. Ces exercices explorent la création de graphiques, la personnalisation des tracés et la manipulation des représentations visuelles de données en Python.
 
 D'autres trimestres et contenus seront ajoutés au fur et à mesure de la progression du cours.
 
