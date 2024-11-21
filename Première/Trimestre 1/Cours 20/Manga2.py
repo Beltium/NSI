@@ -10,6 +10,10 @@ try:
 except FileNotFoundError:
     mangas = {}
 
+def save_data():
+    with open(file, "w") as fichier:
+        json.dump(mangas, fichier, indent=4)
+
 print("Bienvenue dans votre gestionnaire de mangas !\n")
 if mangas:
     print("Voici votre liste actuelle de mangas :")
@@ -38,6 +42,7 @@ while True:
             episodes = int(input(f"Combien d'épisodes avez-vous vus de {titre} ? "))
             mangas[titre] = episodes
             print(f"{titre} a été ajouté avec {episodes} épisodes vus.")
+            save_data()
 
         # Modifier le nombre d'épisodes pour un manga existant
         case "2":
@@ -48,6 +53,7 @@ while True:
                 print(f"Le nombre d'épisodes vus pour {titre} a été mis à jour.")
             else:
                 print(f"{titre} n'est pas dans la liste des mangas.")
+            save_data()
 
         # Ajout rapide
         case "3":
@@ -59,6 +65,7 @@ while True:
                 print(f"Le nombre d'épisodes vus pour {titre} a été mis à jour, vous êtes maintenant à {mangas[titre]}.")
             else:
                 print(f"{titre} n'est pas dans la liste des mangas.")
+            save_data()
 
 
         # Afficher la liste des mangas et des épisodes
@@ -78,12 +85,12 @@ while True:
                 print(f"{titre} a été supprimé de la liste.")
             else:
                 print(f"{titre} n'est pas dans la liste.")
+            save_data()
 
         # Quitter le programme
         case "0":
             # Sauvegarder les données avant de quitter
-            with open(file, "w") as fichier:
-                json.dump(mangas, fichier, indent=5)
+            save_data()
             print("Merci d'avoir utilisé le gestionnaire de suivi d'épisodes.")
             break
 
