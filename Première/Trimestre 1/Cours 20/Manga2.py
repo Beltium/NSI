@@ -10,7 +10,14 @@ try:
 except FileNotFoundError:
     mangas = {}
 
-print(mangas)
+print("Bienvenue dans votre gestionnaire de mangas !\n")
+if mangas:
+    print("Voici votre liste actuelle de mangas :")
+    for titre, episodes in mangas.items():
+        print(f"{titre}: {episodes} épisodes vus")
+else:
+    print("Votre liste de mangas est vide. Commencez à en ajouter !")
+
 # Boucle principale du programme
 while True:
     print("\nOptions :")
