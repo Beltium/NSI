@@ -76,7 +76,7 @@ while True:
         case "0":
             # Sauvegarder les données avant de quitter
             with open(file, "w") as fichier:
-                json.dump(mangas, fichier)
+                json.dump(mangas, fichier, indent=5)
             print("Merci d'avoir utilisé le gestionnaire de suivi d'épisodes.")
             break
 
