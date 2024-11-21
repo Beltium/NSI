@@ -17,7 +17,7 @@ def save_data():
 print("Bienvenue dans votre gestionnaire de mangas !\n")
 if mangas:
     print("Voici votre liste actuelle de mangas :")
-    for titre, episodes in mangas.items():
+    for titre, episodes in sorted(mangas.items()):
         print(f"{titre}: {episodes} épisodes vus")
 else:
     print("Votre liste de mangas est vide. Commencez à en ajouter !")
@@ -72,7 +72,7 @@ while True:
         case "4":
             if mangas:
                 print("Liste des mangas suivis :")
-                for titre, episodes in mangas.items():
+                for titre, episodes in sorted(mangas.items()):
                     print(f"{titre}: {episodes} épisodes vus")
             else:
                 print("La liste des mangas est vide.")
