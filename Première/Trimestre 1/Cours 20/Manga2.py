@@ -16,11 +16,12 @@ while True:
     print("\nOptions :")
     print("1. Ajouter un nouveau manga")
     print("2. Modifier le nombre d'épisodes vus")
-    print("3. Afficher la liste des mangas")
-    print("4. Supprimer un manga")
+    print("3. Ajout rapide")
+    print("4. Afficher la liste des mangas")
+    print("5. Supprimer un manga")
     print("0. Quitter")
 
-    choix = input("Entrez votre choix (1/2/3/4/0) : ")
+    choix = input("Entrez votre choix (1/2/3/4/5/0) : ")
 
     match choix:
 
@@ -41,8 +42,20 @@ while True:
             else:
                 print(f"{titre} n'est pas dans la liste des mangas.")
 
-        # Afficher la liste des mangas et des épisodes
+        # Ajout rapide
         case "3":
+            titre = input("Entrez le titre du manga à modifier : ")
+            if titre in mangas:
+                new_ep = int(input(f"Combien d'épisodes avez-vous vus en plus pour {titre} ? "))
+                mangas[titre] += new_ep
+                print(f"Ajout de {new_ep} épisodes à {titre}...")
+                print(f"Le nombre d'épisodes vus pour {titre} a été mis à jour, vous êtes maintenant à {mangas[titre]}.")
+            else:
+                print(f"{titre} n'est pas dans la liste des mangas.")
+
+
+        # Afficher la liste des mangas et des épisodes
+        case "4":
             if mangas:
                 print("Liste des mangas suivis :")
                 for titre, episodes in mangas.items():
@@ -51,7 +64,7 @@ while True:
                 print("La liste des mangas est vide.")
 
         # Supprimer un manga
-        case "4":
+        case "5":
             titre = input("Entrez le titre du manga à supprimer : ")
             if titre in mangas:
                 del mangas[titre]
