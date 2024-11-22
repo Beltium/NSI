@@ -10,14 +10,11 @@ This repository contains various Python programs created for my "Numérique et S
 
 ### Terminale
 
-- **Advanced Exercises**: Additional projects and exercises completed during free time or when ahead of the syllabus.
+Additional projects and exercises completed during free time or when ahead of the syllabus.
 
 ### Extra Exercises
 
-- **Tkinter**:  set of projects showcasing graphical interfaces built with the Tkinter library. These exercises explore the basics of GUI creation in Python, including windows, buttons, and event handling.
-
-- **Matplotlib**:  Set of projects showcasing data visualization using the Matplotlib library. These exercises delve into creating plots, customizing graphs, and working with visual representations of data in Python.
-
+The extra exercises provide additional programming tasks focusing on specific libraries. These activities help explore various tools and features to enhance your coding skills and broaden your knowledge in Python development.
 
 More trimesters and content will be added as the course progresses.
 
@@ -41,13 +38,11 @@ Ce dépôt contient divers programmes Python créés dans le cadre de mes cours 
 
 ### Terminale
 
-- **Exercices Avancés** : Projets et exercices supplémentaires réalisés pendant le temps libre ou lorsque j'étais en avance sur le programme.
+Projets et exercices supplémentaires réalisés pendant le temps libre ou lorsque j'étais en avance sur le programme.
 
 ### Exercices Supplémentaires
 
-- **Tkinter** : Un ensemble de projets illustrant des interfaces graphiques créées avec la bibliothèque Tkinter. Ces exercices explorent les bases de la création d'IHM en Python, notamment les fenêtres, les boutons et la gestion des événements.
-
-- **Matplotlib** : Ensemble de projets mettant en avant la visualisation de données avec la bibliothèque Matplotlib. Ces exercices explorent la création de graphiques, la personnalisation des tracés et la manipulation des représentations visuelles de données en Python.
+Les exercices supplémentaires proposent des tâches de programmation axées sur des bibliothèques spécifiques. Ces activités permettent d'explorer divers outils et fonctionnalités pour améliorer vos compétences en codage et élargir vos connaissances en développement Python.
 
 D'autres trimestres et contenus seront ajoutés au fur et à mesure de la progression du cours.
 
