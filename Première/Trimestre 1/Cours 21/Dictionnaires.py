@@ -2,7 +2,7 @@ personnage = {
     "nom": "Naruto",
     "age": 16,
     "niveau": 5
-    }
+}
 
 print(personnage["nom"])  # Affiche "Naruto"
 
