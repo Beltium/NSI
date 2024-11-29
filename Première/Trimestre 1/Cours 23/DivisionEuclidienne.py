@@ -9,7 +9,7 @@ def div_eucli(a, b):
 
     q = a // b
     r = a % b
-    return (a, b) # Retrourner les résultats dans un tuples pour plus d'optimisation ;)
+    return (q, r) # Retrourner les résultats dans un tuples pour plus d'optimisation ;)
 
 # Programme principal
 dividende = 17
