@@ -12,7 +12,12 @@ def calcul_statistiques(data):
     return (etendue, moyenne, median, ecart_type) # Return les valeurs dans un tuples
 
 données = input("Entrez vos valeurs (séparées par des virgules) : ").split(", ") # Séparation du string dans une liste
-données = [float(val) for val in données] # Convertissage des string en float
+
+try:
+    données = [float(val) for val in données]  # Convertissage des string en float
+except ValueError: # Gestion des erreurs en cas de string rentrés par l'utilisateur
+    print("Erreur : Veuillez entrez uniquement des nombres séparés par des virgules.")
+    exit()
 
 etendue, moyenne, median, ecart_type = calcul_statistiques(données)
 
