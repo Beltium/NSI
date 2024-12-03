@@ -1,6 +1,4 @@
 
-articles = []
-
 # Fonction print
 def print_art(articles):
     print()
@@ -18,18 +16,18 @@ def add_art(titre, auteur, date, articles):
 
 # Fonction principale
 def main():
-    global articles # Mettre la liste 'articles' dans la fonction
+    articles = []
 
     titre = "Élections américaines 2024"
-    auteur = ("Jean Dupont")
+    auteur = "Jean Dupont"
     date = "03/12/2024"
 
     add_art(titre, auteur, date, articles)
     print_art(articles)
 
-    titre = input("Donner un titre à l'article : ")
-    auteur = input("Entrer le nom de l'auteur : ")
-    date = input("Entrer la date de publication : ")
+    titre = input("Donner un titre à l'article : ").strip()
+    auteur = input("Entrer le nom de l'auteur : ").strip()
+    date = input("Entrer la date de publication : ").strip()
     add_art(titre, auteur, date, articles)
     print_art(articles)
 
