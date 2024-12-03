@@ -3,10 +3,10 @@ articles = []
 
 # Fonction print
 def print_art(articles):
-    if not articles:
+    if not articles: # Vérifier si il y a des articles
         print("Il n'y a pas encore d'articles.")
     else:
-        for art in articles:
+        for art in articles: # Les print un par un
             print(f"Titre: {art['titre']}, Auteur: {art['auteur']}, Date: {art['date']}\n")
 
 
@@ -17,14 +17,13 @@ def add_art(titre, auteur, date, articles):
 
 # Fonction principale
 def main():
-    global articles
+    global articles # Mettre la liste 'articles' dans la fonction
 
     titre = "Élections américaines 2024"
     auteur = ("Jean Dupont")
     date = "03/12/2024"
 
     add_art(titre, auteur, date, articles)
-
     print_art(articles)
 
 
