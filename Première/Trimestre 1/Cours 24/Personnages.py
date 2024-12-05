@@ -48,3 +48,24 @@ def display_characters():
         for item, quantity in info['inventory'].items():
             print(f"    {item} : {quantity}")
         print()
+
+def menu():
+    while True:
+        print("======= Menu =======")
+        print("1. Ajouter un personnage")
+        print("2. Afficher les personnages")
+        print("0. Quitter le programme")
+
+        choice = input("Que voulez-vous faire ? (1/2/0)")
+        match choice:
+
+            case "1":
+                add_character()
+            case "2":
+                display_characters()
+            case "3":
+                print("Merci d'avoir utilisé mon programme !")
+                exit()
+
+if __name__ == '__main__':
+    menu()
