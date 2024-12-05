@@ -75,7 +75,7 @@ def menu():
                 add_character()
             case "2":
                 display_characters()
-            case "3":
+            case "0":
                 print("Merci d'avoir utilisé mon programme !")
                 exit()
 
