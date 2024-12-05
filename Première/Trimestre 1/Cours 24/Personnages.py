@@ -34,3 +34,17 @@ def add_character():
             "inventory": inventory
         }
         print(f"{name} a été ajouté avec succés.")
+
+def display_characters():
+    if not characters:
+        print("Aucun personnage enregistré.\n")
+
+    for name, info in characters.items():
+        print(f"  Nom : {name}")
+        print(f"  Âge : {info['age']}")
+        print(f"  Rôle : {info['role']}")
+        print(f"  Compétences : {', '.join(info['skills'])}")
+        print(f"  Inventaire :")
+        for item, quantity in info['inventory'].items():
+            print(f"    {item} : {quantity}")
+        print()
