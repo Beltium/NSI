@@ -1,0 +1,26 @@
+{
+     "Naruto": {
+          "age": 12,
+          "role": "Ninja",
+          "skills": [
+               "Multi clonage",
+               "Rasengan"
+          ],
+          "inventory": {
+               "Bandeau": 1
+          }
+     },
+     "Luffy": {
+          "age": 19,
+          "role": "Capitaine pirate",
+          "skills": [
+               "Gear Second",
+               "Haki du Roi",
+               "Gomu Gomu no Gatling"
+          ],
+          "inventory": {
+               "Chapeau de paille": 1,
+               "Viande séchée": 3
+          }
+     }
+}
