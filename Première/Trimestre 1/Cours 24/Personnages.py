@@ -1,29 +1,34 @@
 
+# Importation des modules
 import json
-from logging import exception
+
 
 # Initiation des variables
 characters = {}
 file_path = "personnages.json"
 
+
+# Sauvegarde dans un fichier json
 def save_to_json(dictionary, file_path = file_path):
     try:
         with open(file_path, 'w') as json_file:
-            json.dump(dictionary, json_file, indent=5)
+            json.dump(dictionary, json_file, indent=5) # Sauvegarde avec alinéa de 5
         print(f"Sauvegarde effectuée avec succès dans : {file_path}")
     except Exception as e:
-        print(f"Une erreur s'est produite pendant la sauvegarde : {e}")
+        print(f"Une erreur s'est produite pendant la sauvegarde : {e}") # Si une erreur est détecté, indiquer laquelle
 
 
+# Lire les données
 def read_from_json(file_path = file_path):
     try:
         with open(file_path, 'r') as json_file:
-            dictionary = json.load(json_file)
+            dictionary = json.load(json_file) # json.load pour lire les données depuis un json
         print(f"Données lues avec succèes depuis : {file_path}")
         return dictionary
-    except Exception as e:
+    except Exception as e: # En cas d'erreur, indiquer laquelle et retourner un dictionnaire vide
         print(f"Une erreur s'est produite pendant la sauvegarde : {e}")
         return {}
+
 
 def add_character():
     while True:
@@ -59,6 +64,7 @@ def add_character():
         print(f"{name} a été ajouté avec succés.\n")
         break
 
+
 def display_characters():
     if not characters:
         print("Aucun personnage enregistré.\n")
@@ -73,6 +79,7 @@ def display_characters():
             print(f"    {item} : {quantity}")
         print()
 
+
 def menu():
     print(r"""
      ██████╗██╗  ██╗ █████╗ ██████╗  █████╗  ██████╗████████╗███████╗██████╗ ███████╗
@@ -85,8 +92,8 @@ def menu():
      Gestion des personnages - Jeux-Vidéos & Mangas
             """)
 
-    global characters
-    characters = read_from_json()
+    global characters # Variable globale
+    characters = read_from_json() # Lecture des données
     while True:
         print("======= Menu =======")
         print("1. Ajouter un personnage")
@@ -98,12 +105,13 @@ def menu():
 
             case "1":
                 add_character()
-                save_to_json(characters)
+                save_to_json(characters) # Sauvegarde après ajout de personnages
             case "2":
                 display_characters()
             case "0":
                 print("Merci d'avoir utilisé mon programme !")
                 exit()
+
 
 if __name__ == '__main__':
     menu()
