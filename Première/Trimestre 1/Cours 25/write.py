@@ -1,5 +1,5 @@
 
-file_path = "fichier.txt"
+file_path = "file.txt"
 
 f = open(file_path, 'w')
 
