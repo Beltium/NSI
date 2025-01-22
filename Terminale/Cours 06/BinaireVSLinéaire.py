@@ -30,20 +30,20 @@ def recherche_binaire(liste, debut, fin, cible):
         return recherche_binaire(liste, debut, milieu - 1, cible)
 
 
-# Liste de 1 000 sections
-sections = list(range(1, 10001))
+# Liste de 10 000 sections
+sections = list(range(1, 100001))
 
 # Chronométrer la recherche linéaire
 print("=== Recherche Linéaire ===")
 start_time = time.time()
-recherche_lineaire(sections, 10000)
+recherche_lineaire(sections, 100000)
 lin_time = time.time() - start_time
 print(f"Temps d'exécution de la recherche linéaire : {lin_time:.6f} secondes\n")
 
 # Chronométrer la recherche binaire
 print("=== Recherche Binaire ===")
 start_time = time.time()
-recherche_binaire(sections, 0, len(sections) - 1, 10000)
+recherche_binaire(sections, 0, len(sections) - 1, 100000)
 bin_time = time.time() - start_time
 print(f"Temps d'exécution de la recherche binaire : {bin_time:.6f} secondes\n")
 
