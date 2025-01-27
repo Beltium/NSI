@@ -8,6 +8,7 @@ curseur.execute('SELECT * FROM users')
 
 results = curseur.fetchall()
 
+print(results)
 for user in results:
     print(f"ID: {user[0]}, Nom: {user[1]}, Email: {user[2]}, Âge: {user[3]}")
 
