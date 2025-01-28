@@ -9,7 +9,7 @@ def load_data(prompt, db = db):
         return curseur.fetchall()
 
 prompt = '''
-SELECT * FROM actualites
+SELECT * FROM actualites WHERE titre LIKE '%Coupe%';
 '''
 
 print(load_data(prompt))
