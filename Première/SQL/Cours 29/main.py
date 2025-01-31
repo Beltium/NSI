@@ -30,7 +30,8 @@ def display_players(path=db_path):
     with sqlite3.connect(path) as connexion:
         curseur = connexion.cursor()
         curseur.execute('''
-        
+        SELECT name, score FROM players 
+        ORDER BY score DESC LIMIT 3;
         ''')
         return curseur.fetchall()
 
@@ -45,7 +46,7 @@ def main():
         )''')
 
         while True:
-            print("==== MENU ====")
+            print("\n==== MENU ====")
             print("1. AJouter un score.")
             print("2. Afficher les 3 meilleurs scores.")
             print("0. Quitter.")
@@ -55,7 +56,10 @@ def main():
                     input_player()
                     continue
                 case '2':
-                    print("a")
+                    results = display_players()
+                    for name, score in results:
+                        print(f"{name} : {score}")
+
                     continue
                 case '0':
                     exit()
