@@ -26,6 +26,14 @@ def input_player():
             break
         add_player(name, score)
 
+def display_players(path=db_path):
+    with sqlite3.connect(path) as connexion:
+        curseur = connexion.cursor()
+        curseur.execute('''
+        
+        ''')
+        return curseur.fetchall()
+
 def main():
     with sqlite3.connect(db_path) as connexion:
         curseur = connexion.cursor()
