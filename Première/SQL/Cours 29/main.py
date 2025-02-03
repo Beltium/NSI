@@ -3,14 +3,18 @@ import sqlite3
 db_path = "players.db"
 
 def add_player(name, score, path=db_path):
-    with sqlite3.connect(db_path) as connexion:
-        curseur = connexion.cursor()
-        curseur.execute(f'''
-        INSERT INTO players (name, score)
-        VALUES ('{name}', {score})
-        ''')
-        connexion.commit()
-        print(f"{name} ajouté avec succès avec un score de {score}.")
+    try :
+        with sqlite3.connect(db_path) as connexion:
+            curseur = connexion.cursor()
+            curseur.execute(f'''
+            INSERT INTO players (name, score)
+            VALUES ('{name}', {score})
+            ''')
+            connexion.commit()
+            print(f"{name} ajouté avec succès avec un score de {score}.")
+    except Exception as e:
+        print(f"Erreur : {e}")
+
 
 def input_player():
     while True:
@@ -41,7 +45,7 @@ def main():
         curseur.execute('''
         CREATE TABLE IF NOT EXISTS players (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT NOT NULL,
+            name TEXT UNIQUE NOT NULL,
             score INTEGER NOT NULL
         )''')
 
