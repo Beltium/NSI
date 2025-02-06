@@ -14,14 +14,14 @@ with sqlite3.connect(db_path) as connexion:
     ''')
     connexion.commit()
 
-def add():
+def add(nom, telephone, email):
     with sqlite3.connect(db_path) as connexion:
         curseur = connexion.cursor()
-        curseur.execute('''
+        curseur.execute(f'''
         INSERT INTO contacts (nom, telephone, email)
-        VALUES ('Alice', '0645789716', 'aaaalice@gmail.com')
+        VALUES ('{nom}', '{telephone}', '{email}')
         ''')
         connexion.commit()
 
 if __name__ == '__main__':
-    add()
+    add('Bob', '0787214596', 'bobi@hotmail.com')
