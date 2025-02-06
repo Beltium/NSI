@@ -23,6 +23,14 @@ def add(nom, telephone, email):
         ''')
         connexion.commit()
 
+def update_mail(name, email):
+    with sqlite3.connect(db_path) as connexion:
+        connexion.cursor().execute(f'''
+        UPDATE contacts
+        SET email = '{email}'
+        WHERE nom = '{name}';
+        ''')
+
 def read():
     with sqlite3.connect(db_path) as connexion:
         curseur = connexion.cursor()
@@ -34,3 +42,4 @@ def read():
 if __name__ == '__main__':
     # add('Bob', '0787214596', 'bobi@hotmail.com')
     read()
+    update_mail('Alice', 'mail2@gmail.com')
