@@ -12,4 +12,4 @@ with sqlite3.connect(db_path) as connexion:
                 email VARCHAR(100)
             );
     ''')
-
+    connexion.commit()
