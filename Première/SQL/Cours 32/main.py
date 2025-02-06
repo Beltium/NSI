@@ -19,9 +19,18 @@ def add(nom, telephone, email):
         curseur = connexion.cursor()
         curseur.execute(f'''
         INSERT INTO contacts (nom, telephone, email)
-        VALUES ('{nom}', '{telephone}', '{email}')
+        VALUES ('{nom}', '{telephone}', '{email}');
         ''')
         connexion.commit()
 
+def read():
+    with sqlite3.connect(db_path) as connexion:
+        curseur = connexion.cursor()
+        curseur.execute(f'''
+        SELECT * FROM contacts;
+        ''')
+        print(curseur.fetchall())
+
 if __name__ == '__main__':
-    add('Bob', '0787214596', 'bobi@hotmail.com')
+    # add('Bob', '0787214596', 'bobi@hotmail.com')
+    read()
