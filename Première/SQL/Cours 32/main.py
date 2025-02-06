@@ -30,6 +30,7 @@ def update_mail(name, email):
         SET email = '{email}'
         WHERE nom = '{name}';
         ''')
+        connexion.commit()
 
 def read():
     with sqlite3.connect(db_path) as connexion:
@@ -39,7 +40,18 @@ def read():
         ''')
         print(curseur.fetchall())
 
+def delete(name):
+    with sqlite3.connect(db_path) as connexion:
+        connexion.cursor().execute(f'''
+        DELETE FROM contacts WHERE nom = '{name}';
+        ''')
+        connexion.commit()
+
 if __name__ == '__main__':
-    # add('Bob', '0787214596', 'bobi@hotmail.com')
+    add('Alice', '0482469596', 'Alice@hotmail.com')
     read()
     update_mail('Alice', 'mail2@gmail.com')
+    read()
+    delete('Alice')
+    read()
+
