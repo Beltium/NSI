@@ -22,9 +22,19 @@ ul {
     border: 1px solid black;
 }
 
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 colonnes de même largeur */
+    gap: 10px;
+    justify-content: center;
+}
+
 .image {
-    display: block;
-    margin: auto;
-    width: 25%;
+    width: 100%;
     height: auto;
 }            
+
+.link {
+    text-align: center;
+    font-size: 30px;
+}
