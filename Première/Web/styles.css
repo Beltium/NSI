@@ -41,5 +41,13 @@ ul {
 }
 
 .button {
-    
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.div-liste {
+    margin-left: 5%;
+    margin-right: 5%;
 }
