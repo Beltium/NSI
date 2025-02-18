@@ -20,9 +20,18 @@
         <img src="images/image.webp" alt="Une belle image" class="image">
         <div class="image">
             <p class="link"><a href="https://example.com" target="_blank">Visitez ce site</a></p>
-            <button class="button">Button</button>
+            <button class="button" onclick="sayHello()">Button</button>
+            <p id="texte">Ceci est un texte qui va changé !</p>
+            <div class="div-liste">
+                <ul id="liste">
+                    <li>Première élément</li>
+                    <li>Deuxième élément</li>
+                </ul>
+                <button class="button" onclick="ajouterElement()">Ajouter un élément à la liste</button>
+            </div>
         </div>
         <img src="images/dog.webp" alt="Image d'un chien" class="image">
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
