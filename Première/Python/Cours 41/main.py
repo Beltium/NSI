@@ -5,7 +5,13 @@ amis = [
     {"position": [1, 2], "sport": "Football"},
     {"position": [2, 3], "sport": "Football"},
     {"position": [3, 3], "sport": "Basketball"},
-    {"position": [6, 6], "sport": "Basketball"}
+    {"position": [6, 6], "sport": "Basketball"},
+    {"position": [5, 1], "sport": "Football"},
+    {"position": [4, 2], "sport": "Basketball"},
+    {"position": [7, 5], "sport": "Basketball"},
+    {"position": [8, 3], "sport": "Football"},
+    {"position": [2, 6], "sport": "Football"},
+    {"position": [4, 5], "sport": "Basketball"}
 ]
 
 nouveau_ami = [3, 4]
