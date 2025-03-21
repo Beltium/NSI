@@ -6,7 +6,10 @@ This repository contains various Python programs created for my "Numérique et S
 
 ### Première
 
-- **Trimestre 1**: Programs from the first trimester, covering foundational concepts.
+- PHP
+- Python
+- SQL
+- Web
 
 ### Terminale
 
@@ -34,7 +37,10 @@ Ce dépôt contient divers programmes Python créés dans le cadre de mes cours 
 
 ### Première
 
-- **Trimestre 1** : Programmes du premier trimestre, couvrant les concepts fondamentaux.
+- PHP
+- Python
+- SQL
+- Web
 
 ### Terminale
 
