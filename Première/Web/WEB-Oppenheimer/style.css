@@ -1,0 +1,136 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #222;
+    color: #fff;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Menu de navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+}
+
+nav a {
+    color: #ff7300;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+
+/* Sections */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #ff7300;
+}
+
+/* Section avec image + texte */
+.image-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-text img {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+.image-text div {
+    flex: 1;
+}
+
+
+/* Responsive : sur mobile, empiler les éléments */
+@media screen and (max-width: 768px) {
+    .image-text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-text img {
+        max-width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav li {
+        margin: 10px 0;
+    }
+    
+    body {
+        padding: 10px;
+    }
+}
+
+/* Liste */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+button, input[type="submit"] {
+    background-color: #ff7300;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #ffcc00;
+    color: #222;
+}
+
+
+/* Pied de page */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #111;
+    border-radius: 10px;
+}

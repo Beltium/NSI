@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppenheimer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.jpg" type="image/jpg">
+</head>
+<body>
+
+    <header>
+        <h1>Robert Oppenheimer : Le père de la bombe atomique</h1>
+        <nav>
+            <ul>
+                <li><a href="#biographie">Biographie</a></li>
+                <li><a href="#manhattan">Projet Manhattan</a></li>
+                <li><a href="#consequences">Conséquences</a></li>
+                <li><a href="#film">Le film de Nolan</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="biographie" class="image-text">
+            <img src="images/R-Oppenheimer.jpg" alt="Portrait de Robert Oppenheimer">
+            <div>
+                <h2>Biographie de Robert Oppenheimer</h2>
+                <p>J. Robert Oppenheimer (1904-1967) était un physicien américain spécialisé en mécanique quantique. Professeur à l'université de Berkeley, il devint le directeur scientifique du projet Manhattan pendant la Seconde Guerre mondiale. Après la guerre, il milita pour le contrôle international du nucléaire et s'opposa à la bombe H, ce qui lui valut des accusations de sympathies communistes et la perte de son habilitation de sécurité.</p>
+                <p>Son célèbre dilemme moral est résumé par sa citation : <i>"Now I am become Death, the destroyer of worlds"</i>, extraite du Bhagavad-Gita.</p>
+            </div>
+        </section>
+
+        <section id="manhattan">
+            <h2>Le projet Manhattan</h2>
+            <p>Le projet Manhattan fut l'un des programmes militaires les plus ambitieux du XXe siècle. Lancé en 1942, il mobilisa des milliers de scientifiques, ingénieurs et ouvriers pour développer la première bombe atomique. Trois sites majeurs furent créés : Oak Ridge (enrichissement d'uranium), Hanford (production de plutonium) et Los Alamos (conception et assemblage des bombes).</p>
+            <p>Ce projet permit la fabrication de deux bombes : <b>"Little Boy"</b> (à l’uranium) larguée sur Hiroshima, et <b>"Fat Man"</b> (au plutonium) larguée sur Nagasaki.</p>
+        </section>
+
+        <section id="consequences">
+            <h2>Conséquences du projet Manhattan</h2>
+            <ul>
+                <li><b>Utilisation des bombes sur Hiroshima et Nagasaki :</b> Ces bombardements entraînèrent la capitulation du Japon, mais causèrent plus de 200 000 morts et des séquelles sur plusieurs générations.</li>
+                <li><b>Début de la Guerre Froide :</b> La bombe atomique incita l'URSS à accélérer son propre programme nucléaire, déclenchant une course à l’armement.</li>
+                <li><b>Course à l’armement nucléaire :</b> L’équilibre de la terreur s'installa entre les grandes puissances, menant à la prolifération des armes nucléaires.</li>
+            </ul>
+        </section>
+
+        <section id="film" class="image-text">
+            <img src="images/oppenheimer-poster.jpg" alt="Affiche du film Oppenheimer">
+            <div>
+                <h2>Oppenheimer, le film de Christopher Nolan</h2>
+                <p>En 2023, Christopher Nolan réalise <b>"Oppenheimer"</b>, un biopic intense mettant en scène Cillian Murphy dans le rôle du physicien. Le film se distingue par son approche narrative non linéaire, ses scènes en IMAX et son exploration du poids moral du scientifique.</p>
+                <p>Le film s’inspire du livre <i>"American Prometheus"</i> et met en lumière le combat intérieur d'Oppenheimer face aux conséquences de son travail.</p>
+                <a href="https://www.imdb.com/fr/title/tt15398776/" target="_blank">En savoir plus sur le film</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+                <label for="message">Votre message :</label>
+                <textarea id="message" name="message" placeholder="Écrivez votre message ici..." required></textarea>
+
+                <input type="submit" value="Envoyer">
+            </form>
+
+            <p id="response-message" class="success-message hidden"></p>
+            <p id="easter-egg-message" class="hidden"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Hugo Mathieu</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
