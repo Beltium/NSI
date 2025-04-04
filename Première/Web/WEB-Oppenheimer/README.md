@@ -30,7 +30,7 @@ Le projet utilise des technologies HTML, CSS, et JavaScript, et est hébergé su
 
 1. Clonez ce repository sur votre machine locale :
    ```bash
-   git clone https://github.com/Beltium/WEB-Oppenheimer.git
+   git clone https://github.com/Beltium/NSI.git
    ```
 
 2. Ouvrez le fichier `index.html` dans votre navigateur pour voir le site en local.
