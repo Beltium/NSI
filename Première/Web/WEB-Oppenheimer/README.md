@@ -12,7 +12,7 @@ Le site web est structuré autour des sections suivantes :
 - **Film** : Informations sur le film *Oppenheimer* réalisé par Christopher Nolan, avec un lien vers la page IMDb.
 - **Contact** : Formulaire de contact avec un message de confirmation après l'envoi du formulaire.
 
-Le projet utilise des technologies HTML, CSS, et JavaScript, et est hébergé sur GitHub Pages à l'URL suivante : [https://beltium.github.io/WEB-Oppenheimer/](https://beltium.github.io/WEB-Oppenheimer/).
+Le projet utilise des technologies HTML, CSS, et JavaScript, et est hébergé sur GitHub Pages à l'URL suivante : [https://beltium.github.io/NSI/Premi%C3%A8re/Web/WEB-Oppenheimer/](https://beltium.github.io/NSI/Premi%C3%A8re/Web/WEB-Oppenheimer/).
 
 ## Fonctionnalités
 
@@ -34,14 +34,6 @@ Le projet utilise des technologies HTML, CSS, et JavaScript, et est hébergé su
    ```
 
 2. Ouvrez le fichier `index.html` dans votre navigateur pour voir le site en local.
-
-## Contribution
-
-Si vous souhaitez contribuer au projet, n'hésitez pas à forker le repository et à soumettre une pull request avec vos modifications.
-
-## License
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ## Acknowledgements
 
