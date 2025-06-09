@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jeu de Réflexes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Teste tes réflexes !</h1>
+  <div id="gameZone">Clique ici quand c’est vert</div>
+  <p id="status">Clique pour commencer…</p>
+
+  <form id="scoreForm" method="POST" action="submit.php" style="display: none;">
+    <input type="hidden" name="reactionTime" id="reactionTime" />
+    <label for="pseudo">Ton pseudo :</label>
+    <input type="text" name="pseudo" id="pseudo" required placeholder="Pseudo" />
+    <button type="submit">Enregistrer ton score</button>
+  </form>
+
+  <a class="button" href="classement.php">Voir le classement</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
