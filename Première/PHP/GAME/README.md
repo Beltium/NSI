@@ -12,7 +12,7 @@ Le site web est structuré autour des fonctionnalités suivantes :
 
 ## Fonctionnalités
 
-- **Interface simple** : Un design simple et induitif basé sur le style d'un ancien projet.
+- **Interface simple** : Un design simple et intuitif basé sur le style d'un ancien projet.
 - **Sauvegarde des scores** : Les scores sont envoyés à un fichier JSON via un script PHP (`submit.php`).
 - **Classement dynamique** : Les scores sont affichés de manière dynamique à l'aide de `classement.php`.
 - **Responsive** : Le site est adapté à tous types d’écrans (ordinateur, tablette, mobile).
